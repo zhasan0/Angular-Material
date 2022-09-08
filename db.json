@@ -1,0 +1,41 @@
+{
+  "productList": [
+    {
+      "name": "Apple 14 pro max",
+      "category": "electronics",
+      "buyingDate": "2022-09-04T18:00:00.000Z",
+      "productType": "Second Hand",
+      "price": 100000,
+      "description": "This is Second Hand phone and came from USA.",
+      "id": 1
+    },
+    {
+      "name": "Apple",
+      "category": "fruits",
+      "buyingDate": "2022-09-07T18:00:00.000Z",
+      "productType": "Brand New",
+      "price": 350,
+      "description": "Brand new phone from south korea.",
+      "id": 2
+    },
+    {
+      "name": "Celling Fan",
+      "category": "electronics",
+      "buyingDate": "2022-09-09T18:00:00.000Z",
+      "productType": "Second Hand",
+      "price": 2000,
+      "description": "This is second hand celling fan!",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
