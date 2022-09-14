@@ -26,6 +26,33 @@
       "price": 2000,
       "description": "This is second hand celling fan!",
       "id": 3
+    },
+    {
+      "name": "Banana",
+      "category": "fruits",
+      "buyingDate": "2022-09-19T18:00:00.000Z",
+      "productType": "Second Hand",
+      "price": 120,
+      "description": "120 tk per drozone",
+      "id": 4
+    },
+    {
+      "name": "Pain Apple",
+      "category": "vagetables",
+      "buyingDate": "2022-09-13T18:00:00.000Z",
+      "productType": "Brand New",
+      "price": 250,
+      "description": "From Farmer",
+      "id": 5
+    },
+    {
+      "name": "Orange ",
+      "category": "fruits",
+      "buyingDate": "2022-09-12T18:00:00.000Z",
+      "productType": "Brand New",
+      "price": 220,
+      "description": "Buying from farmer",
+      "id": 6
     }
   ],
   "comments": [

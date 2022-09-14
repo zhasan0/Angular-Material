@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3" style="background-color: gray; min-height: calc(100vh - 65px);">
+      <div>
+        <mat-card class="mt-3">
+          <form action="" [formGroup]="todoForm">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Task Name</mat-label>
+              <input formControlName="item" matInput placeholder="Placeholder">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+            <div class="text-end">
+              <button (click)="addTask()" mat-raised-button color="primary" [disabled]="todoForm.invalid">Create</button>
+            </div>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div cdkDropListGroup>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="example-container">
+              <h3>All Tasks</h3>
+              <div cdkDropList [cdkDropListData]="allTasks" class="example-list" (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of allTasks" cdkDrag>{{item.description}}</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <h3>In Progress</h3>
+              <div cdkDropList [cdkDropListData]="inprogressTasks" class="example-list" (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of inprogressTasks" cdkDrag>{{item.description}}</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <h3>Done</h3>
+              <div cdkDropList [cdkDropListData]="doneTasks" class="example-list" (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of doneTasks" cdkDrag>{{item.description}}</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

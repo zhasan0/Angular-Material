@@ -20,11 +20,19 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatCardModule } from '@angular/material/card';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { TodoComponent } from './components/todo/todo.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MaterialCrudComponent } from './components/material-crud/material-crud.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent
+    DialogComponent,
+    TodoComponent,
+    NavbarComponent,
+    MaterialCrudComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +53,10 @@ import { MatSortModule } from '@angular/material/sort';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatCardModule,
+    MatFormFieldModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>AG-14 Material CRUD</span>
+  <span class="example-spacer"></span>
+  <a mat-raised-button color="accent" [routerLink]="['/']" class="me-1">HOME</a>
+  <a mat-raised-button color="accent" [routerLink]="['todo']" class="me-1">TODO</a>
+  <button mat-raised-button color="accent" (click)="openDialog()">Add New</button>
+</mat-toolbar>
